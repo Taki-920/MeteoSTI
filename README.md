@@ -4,8 +4,8 @@
 
 - Météo 
 - Précipitation 
-- Vitesse du vent 
--aléa climatique (alerte tornade, inondation…)
+- Vitesse du vent
+- Aléa climatique (alerte tornade, inondation…)
 - température
 - Soleil, nuageux, pluies 
 - Date (jours, heures..)
