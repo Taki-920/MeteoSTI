@@ -34,3 +34,4 @@
 **Heures de lever et coucher du soleil** : Afficher les heures de lever et coucher du soleil.
 
 **Humidité** : Afficher le niveau d'humidité.
+<img width="829" height="807" alt="image" src="https://github.com/user-attachments/assets/3e7797ac-7922-4aff-a01c-8f1d79e5f6b6" />
