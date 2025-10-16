@@ -30,3 +30,21 @@ Le site devra donner **la date précise, ainsi que les heures de lever et de cou
 
 **Humidité** : Afficher le niveau d'humidité.
 <img width="829" height="807" alt="image" src="https://github.com/user-attachments/assets/3e7797ac-7922-4aff-a01c-8f1d79e5f6b6" />
+
+[Utilisateur] --(Consulter)--> [Météo]
+[Utilisateur] --(Consulter)--> [Précipitation]
+[Utilisateur] --(Consulter)--> [Vitesse du vent]
+[Utilisateur] --(Consulter)--> [Aléas climatiques]
+[Utilisateur] --(Consulter)--> [Température]
+[Utilisateur] --(Consulter)--> [Soleil, nuageux, pluie]
+[Utilisateur] --(Consulter)--> [Date et heure]
+[Utilisateur] --(Consulter)--> [Indice UV]
+[Utilisateur] --(Consulter)--> [Heures de lever et coucher du soleil]
+[Utilisateur] --(Consulter)--> [Humidité]
+
+[Météo] --> [Précipitation] (affiche les niveaux de précipitation)
+[Météo] --> [Vitesse du vent] (affiche la vitesse du vent)
+[Température] --> [Soleil, nuageux, pluie] (indique l'état du ciel)
+[Aléas climatiques] --> [Météo] (alerte en cas de conditions extrêmes)
+[Heures de lever et coucher du soleil] --> [Soleil, nuageux, pluie] (affiche l'heure des événements solaires)
+
