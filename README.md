@@ -32,5 +32,4 @@ Site facile d'utilisation et bien comprehensible.
 
 **Humidité** : Afficher le niveau d'humidité.
 <img width="829" height="807" alt="image" src="https://github.com/user-attachments/assets/3e7797ac-7922-4aff-a01c-8f1d79e5f6b6" />
-
-ujk077STreh28A4NCaF6CfU5DEkjm%2FfV1dMCAdlftdAA2GxSvU%2B6lrppF7ZtOocevli6WQr0LpVBoj5xCzXukT3lCQqK%2BrI%2FvhDrSHT9z67rhcd%2FvhEKsf4pYAlz%2FoBM%2B%2Fg8%3D%3C%2Fdiagram%3E%3C%2Fmxfile%3E" />
+   
