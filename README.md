@@ -2,16 +2,11 @@
 
 # Cahier des charges : 
 
-- Météo 
-- Précipitation 
-- Vitesse du vent
-- Aléa climatique 
-- température
-- Soleil, nuageux, pluies 
-- Date 
-- Indice UV 
-- Heures du lever et coucher de soleil 
-- Humidité
+Dans le cadre de notre projet, on doit récupérer et afficher différentes données **météo** importantes. Le site devra indiquer la **température** **(minimale et maximale)**, ainsi que le **temps** qu’il fait **(ensoleillé, nuageux, pluie, etc.)**. Il faudra aussi connaître le taux de **précipitation,(en mm)** pour savoir s’il va **pleuvoir**, et en quelle quantité.
+
+On prendra aussi en compte la **vitesse du vent**, exprimée en **km/h**, et on indiquera la direction si possible. Il est important d’ajouter **l’indice UV**, pour prévenir des risques liés à **l’exposition au soleil**. **Le taux d’humidité** devra aussi être affiché, car il joue un rôle dans la sensation de chaleur.
+
+Le site devra donner **la date précise, ainsi que les heures de lever et de coucher du soleil**, ce qui est utile pour organiser sa journée. Enfin, il devra signaler tout **aléa climatique, comme des orages, une canicule ou du gel, pour prévenir les utilisateurs.**
 
 # Exigences principales :
 
