@@ -8,6 +8,8 @@ On prendra aussi en compte la **vitesse du vent**, exprimée en **km/h**, et on 
 
 Le site devra donner **la date précise, ainsi que les heures de lever et de coucher du soleil**, ce qui est utile pour organiser sa journée. Enfin, il devra signaler tout **aléa climatique, comme des orages, une canicule ou du gel, pour prévenir les utilisateurs.**
 
+Site facile d'utilisation et bien comprehensible. 
+
 # Exigences principales :
 
 **Météo** : Affichage des conditions météorologiques.
