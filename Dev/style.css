@@ -1,1 +1,6 @@
-body {font-family: system-ui, Arial; max-width: 900px; margin: 20px auto; padding: 16px; line-height: 1.4;}
+body {font-family: system-ui, Arial; 
+  max-width: 900px; 
+  margin: 20px auto; 
+  padding: 16px; 
+  line-height: 1.4;
+}
