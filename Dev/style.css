@@ -4,8 +4,19 @@ body {font-family: system-ui, Arial;
   padding: 16px; 
   line-height: 1.4;
 }
+
 header {
   display: flex;
   gap: 12px;
   align-items: center;
+
+}
+input, button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 12px;
 }
