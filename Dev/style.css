@@ -4,3 +4,8 @@ body {font-family: system-ui, Arial;
   padding: 16px; 
   line-height: 1.4;
 }
+header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
