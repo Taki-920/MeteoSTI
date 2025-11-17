@@ -1,5 +1,1 @@
-
-
-body {
-  background-image: url("https://meteofrance.com/modules/custom/mf_map_layers_v2/maps/desktop/METROPOLE/pays007.svg");
-}
+body {font-family: system-ui, Arial; max-width: 900px; margin: 20px auto; padding: 16px; line-height: 1.4;}
