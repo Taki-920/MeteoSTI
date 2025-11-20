@@ -12,11 +12,33 @@ header {
 
 }
 input, button {
-  padding: 8px;
+  padding: 9px;
   font-size: 14px;
 }
 
 .card {
-  border-radius: 8px;
+  border-radius: 9px;
   padding: 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.alert {
+  background: #ffefef;
+  border-left: 4px solid #ff4d4d;
+  padding: 8px;
+}
+
+.good {
+  background: #f0fff4;
+  border-left: 4px solid #2ecc71;
+  padding: 8px;
+}
+
+small {
+  color: #666;
 }
