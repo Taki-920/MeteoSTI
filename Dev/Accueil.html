@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device=width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
         <title> MétéoMonde </title>
     </head>
@@ -21,15 +21,29 @@
         
             <div id="resultat" style="display:none">
             <div class="card">
-            <strong id="localisation"></strong>
+            <strong id="localisation">-</strong>
             <div id="date heure"><small>date / heure</small> </div>
-        </div>     
+        </div> 
+
         <div class="grid">
             <div class="card">
             <h3>Température</h3>
-            <div id="Température"> °C</div>
+            <div id="Température">- °C</div>
             <small id="ressenti"> </small>
-      
+        </div>
+
+        <div class="card">
+            <h3> Précipitation</h3>
+            <div id="precip">-  mm/h</div>
+            <small id="pricip-prob"></small>  
+        </div>
+
+        <div class="card">
+            <h3> Etat du ciel</h3>
+            <div id="condition">-</div>
+            <small id="weathercode-help"></small>
+        </div>
+        
     <script src="Météo.js"></script>
     </body>
-</html>
+</html> 
