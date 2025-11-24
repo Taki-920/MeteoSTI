@@ -5,9 +5,10 @@ fetch(url)
     .then(data => {
         console.log("Données météo :");
         console.log(data);
-
     })
-    const datetimeEl = document.getElementById('date/heure');
+    .catch(erreur => console.console.error("Erreur :", erreur));
+    
+    const datetimeEl = document.getElementById('date-heure');
     const temperatureEl = document.getElementById('temperature');
     const precipitationsEl = document.getElementById('precipitations');
     const etatCielEl = document.getElementById('etat-ciel');
