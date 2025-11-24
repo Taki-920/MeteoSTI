@@ -10,6 +10,6 @@ fetch(url)
     const datetimeEl = document.getElementById('date/heure');
     const temperatureEl = document.getElementById('temperature');
     const precipitationsEl = document.getElementById('precipitations');
-    const etatCielEl = document.getElementById('etat-ciel');
+    const EtatCielEl = document.getElementById('etat du ciel');
     const ventEl = document.getElementById('vent');
     
