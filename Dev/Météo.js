@@ -7,3 +7,4 @@ fetch(url)
         console.log(data);
 
     })
+    const datetimeEl = document.getElementById('date/heure');
