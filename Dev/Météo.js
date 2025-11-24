@@ -8,3 +8,5 @@ fetch(url)
 
     })
     const datetimeEl = document.getElementById('date/heure');
+    const temperatureEl = document.getElementById('temperature');
+    const etatCielEl = document.getElementById('etat-ciel');
