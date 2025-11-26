@@ -7,11 +7,35 @@ fetch(url)
         console.log(data);
 
     })
- const datetimeEl = document.getElementById('date/heure');
- const temperatureEl = document.getElementById('temperature');
+ const localisationEl = document.getElementById('localisation')
+ const resultatEl = document.getElementById('resultat');
+ const dateheureEl = document.getElementById('date-heure');
+ 
+ const températureEl = document.getElementById('Température');
  const precipitationsEl = document.getElementById('precipitations');
  const EtatCielEl = document.getElementById('etat du ciel');
  const ventEl = document.getElementById('vent');
- const humidité = document.getElementById('humidite');
- const levercoucherdesoleilEl = document.getElementById('lever/coucher de soleil');
- const AléasclimatiquealertesimplesEl = document.getElementById('aléas climatique/alertes simples');
+ const rafaleEl = document.getElementById('rafale')
+ const humiditéEl = document.getElementById('humidité');
+ const levercoucherdesoleilEl = document.getElementById('Soleil');
+ const IndiceUvEl = document.getElementById('UV')
+ const AléasclimatiquealertesimplesEl = document.getElementById('Risques');
+ const conditionEl = document.getElementById('condition');
+ 
+ function weatherCodeToText(code) {
+  const map = {
+    0: "Ciel dégagé",
+    1: "Ensoleillé",
+    2: "Partiellement nuageux",
+    3: "Très nuageux",
+    45: "Brouillard",
+    51: "Bruine",
+    61: "Pluie légère",
+    63: "Pluie modérée",
+    65: "Pluie forte",
+    71: "Neige faible",
+    80: "Averses",
+    95: "Orage"
+  };
+  return map[code] || "Code inconnu";
+}
