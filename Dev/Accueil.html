@@ -8,12 +8,12 @@
     </head>
     <body>
         <header> 
-            <h1> MétéoMonde - Weather </h1>
+            <h1> MétéoMonde - WeatherWorld </h1>
         </header>
         
         <div class="card">
             <label> Entrer une ville (ex : Paris)</label><br/>
-            <input id="LocationInput" placeholder="ville"/>
+            <input id="LocalisationInput" placeholder="ville"/>
             <button id="boutonGet"> Obtenir la météo</button>
             <button id="boutonGeo">Utiliser ma position</button>
             <div id="statusSite"><small>Prêt.</small></div>
@@ -22,7 +22,7 @@
             <div id="resultat" style="display:none">
             <div class="card">
             <strong id="localisation">-</strong>
-            <div id="date heure"><small>date / heure</small> </div>
+            <div id="date-heure"><small>date / heure</small> </div>
         </div> 
 
         <div class="grid">
@@ -34,7 +34,7 @@
 
         <div class="card">
             <h3> Précipitation</h3>
-            <div id="precip">-  mm/h</div>
+            <div id="precipitations">-  mm/h</div>
             <small id="pricip-prob"></small>  
         </div>
 
@@ -53,6 +53,11 @@
         <div class="card">
             <h3>Humidité</h3>
             <div id="humidité">- %</div>
+        </div>
+
+         <div class="card">
+            <h3>Indice UV</h3>
+            <div id="UV">—</div>
         </div>
 
         <div class="card">
