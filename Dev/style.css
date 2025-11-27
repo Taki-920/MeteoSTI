@@ -42,3 +42,13 @@ input, button {
 small {
   color: #666;
 }
+
+.card {
+  border-radius: 9px;
+  padding: 12px;
+
+  /* AJOUT pour avoir un cadre autour */
+  border: 1px solid #ccc;
+  background: #fafafa;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
