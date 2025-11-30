@@ -100,7 +100,9 @@ async function getWeather(lat, lon, label) {
 
         // Affichage des données météo
         document.getElementById('localisation').textContent = label;
-        document.getElementById('date-heure').textContent = new Date().toLocaleString();
+        document.getElementById('date-heure').textContent =
+    new Date().toLocaleString("fr-FR", { timeZone: data.timezone });
+
 
         const current = data.current_weather;
         const hourIdx = 0; // simplification pour récupérer les données de l'heure actuelle
@@ -163,7 +165,7 @@ document.getElementById('boutonGet').addEventListener('click', () => {
 });
 
 // Ajouter l'écouteur d'événements pour récupérer la géolocalisation
-document.getElementById('btnGeo').addEventListener('click', () => {
+document.getElementById('boutonGeo').addEventListener('click', () => {
     if (!navigator.geolocation) {
         setstatus('Géolocalisation non prise en compte');
         return;
