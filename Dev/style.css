@@ -42,3 +42,11 @@ input, button {
 small {
   color: #666;
 }
+.data-box {
+    border: 2px solid #ccc;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background: #fafafa;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
