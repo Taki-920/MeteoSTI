@@ -3,12 +3,15 @@ body {font-family: system-ui, Arial;
   margin: 20px auto; 
   padding: 16px; 
   line-height: 1.4;
+  color: #f0fff4;
 }
+
 
 header {
   display: flex;
   gap: 12px;
   align-items: center;
+  color: #fafafa;
 
 }
 input, button {
@@ -48,5 +51,24 @@ small {
     border-radius: 8px;
     background: #fafafa;
     margin-bottom: 15px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05)
+}
+.card {
+  border-radius: 9px;
+  padding: 12px;
+
+  border: 1px solid #cccccc2d;
+  background: #fafafa23;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+body {
+  font-family: system-ui, Arial;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 16px;
+  line-height: 1.4;
+
+  background: url('globe\ terrestre\ .jpg') center/cover no-repeat fixed;
+
 }

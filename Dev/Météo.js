@@ -1,10 +1,10 @@
-// Fonction pour définir le statut de l'application
+
 function setstatus(txt) {
-    const statusEl = document.getElementById('status'); // Assurez-vous que l'élément status existe dans votre HTML
+    const statusEl = document.getElementById('status'); 
     statusEl.innerHTML = `<small>${txt}</small>`;
 }
 
-// Fonction pour convertir le code météo en texte
+
 function weatherCodeToText(code) {
     const map = {
         0: "Ciel dégagé / ensoleillé",
@@ -32,7 +32,7 @@ function weatherCodeToText(code) {
     return map[code] || "Code météo inconnu";
 }
 
-// Fonction pour formater les heures de lever et coucher du soleil
+
 function formatTimeLocal(s) {
     try {
         return new Date(s).toLocaleTimeString([], {
@@ -44,7 +44,7 @@ function formatTimeLocal(s) {
     }
 }
 
-// Fonction de géocodage pour obtenir la latitude et longitude d'une ville
+
 async function geocodeCity(city) {
     setstatus("Recherche de la ville…");
 
@@ -68,7 +68,7 @@ async function geocodeCity(city) {
     }
 }
 
-// Fonction pour récupérer la météo basée sur la latitude et la longitude
+
 async function getWeather(lat, lon, label) {
     setstatus("Récupération météo…");
 
@@ -98,14 +98,16 @@ async function getWeather(lat, lon, label) {
         const res = await fetch(url);
         const data = await res.json();
 
-        // Affichage des données météo
+        
         document.getElementById('localisation').textContent = label;
-        document.getElementById('date-heure').textContent = new Date().toLocaleString();
+        document.getElementById('date-heure').textContent =
+    new Date().toLocaleString("fr-FR", { timeZone: data.timezone });
+
 
         const current = data.current_weather;
-        const hourIdx = 0; // simplification pour récupérer les données de l'heure actuelle
+        const hourIdx = 0; 
 
-        // Mise à jour des éléments HTML avec les données de météo
+        
         document.getElementById('Température').textContent = current.temperature + " °C";
         document.getElementById('vent').textContent = current.windspeed + " m/s";
         document.getElementById('condition').textContent = weatherCodeToText(current.weathercode);
@@ -120,7 +122,7 @@ async function getWeather(lat, lon, label) {
             formatTimeLocal(data.daily.sunrise[0]) + " / " +
             formatTimeLocal(data.daily.sunset[0]);
 
-        // Détection des risques climatiques
+        
         const risques = [];
         if (data.hourly.wind_gusts_10m[hourIdx] >= 25) {
             risques.push(" Rafales très fortes");
@@ -133,7 +135,7 @@ async function getWeather(lat, lon, label) {
             ? risques.map(r => `<div class="risque">${r}</div>`).join("")
             : "Aucun risque détecté";
 
-        // Afficher le bloc de résultats
+        
         document.getElementById('resultat').style.display = "block";
         setstatus("Météo mise à jour.");
 
@@ -143,7 +145,7 @@ async function getWeather(lat, lon, label) {
     }
 }
 
-// Ajouter l'écouteur d'événements pour le bouton de récupération des données
+
 document.getElementById('boutonGet').addEventListener('click', () => {
     const localisation = document.getElementById('LocalisationInput').value.trim();
     if (!localisation) {
@@ -162,8 +164,8 @@ document.getElementById('boutonGet').addEventListener('click', () => {
     }
 });
 
-// Ajouter l'écouteur d'événements pour récupérer la géolocalisation
-document.getElementById('btnGeo').addEventListener('click', () => {
+
+document.getElementById('boutonGeo').addEventListener('click', () => {
     if (!navigator.geolocation) {
         setstatus('Géolocalisation non prise en compte');
         return;
